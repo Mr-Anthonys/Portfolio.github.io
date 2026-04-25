@@ -13,6 +13,7 @@
   text-transform: uppercase;
   word-break: break-all;
   width: 5ch;
+  filter: contrast(0.2);
 }
 
 .experiencia .subtitulo {
@@ -88,4 +89,32 @@
   border-radius: 4px;
   background: #ffffff;
   padding: 5px 10px;
+}
+
+@media (max-widht: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-widht: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
 }

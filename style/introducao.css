@@ -1,11 +1,17 @@
 .introducao {
   max-width: 100vw;
   padding: 40px 20px;
-  margin: 0 auto;
+  margin: 0 207px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 100px;
+  gap: 80px;
   align-items: center;
+
+  position: sticky;
+}
+
+.introducao div {
+  max-width: 800px;
 }
 
 .introducao h1 {
@@ -13,6 +19,7 @@
   line-height: 4rem;
   margin-bottom: 30px;
   position: relative;
+  max-width: inherit;
 }
 
 .introducao h1::before {
